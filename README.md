@@ -8,6 +8,10 @@ To install the package, run the following command:
 npm install eip-login viem
 ```
 
+## Examples
+
+[Sveltekit example](https://sveltekit-siwe-example.vercel.app/)
+
 ## Usages
 
 ```js
