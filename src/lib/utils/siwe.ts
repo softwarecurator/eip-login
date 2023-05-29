@@ -16,7 +16,7 @@ export const generateNonce = (): string => {
 	return nonce;
 };
 
-export const verify = async (message: SiweMessage, signature: Uint8Array) => {
+export const verify = async (message: SiweMessage, signature: any) => {
 	const preparedMessage = prepareMessage(message);
 	const valid = await publicClient.verifyMessage({
 		address: `0x${message.address.split('0x')[1]}`,
